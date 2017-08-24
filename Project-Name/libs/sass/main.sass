@@ -1,8 +1,21 @@
+/* Import --------- */
+
+@import "vars"
+
 /* Core ----------- */
-html
+
+html, body
+	height: 100%
   color: #222
-  font-size: 1em
-  line-height: 1.4
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+  font-family: $default-font
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
 
 ::selection
   background: #b3d4fc
@@ -59,6 +72,11 @@ textarea
 
 .invisible
   visibility: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
 
 .clearfix
   &:before
